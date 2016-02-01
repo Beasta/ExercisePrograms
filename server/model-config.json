@@ -26,10 +26,6 @@
     "dataSource": "db",
     "public": false
   },
-  "Todo": {
-    "dataSource": "db",
-    "public": true
-  },
   "Program": {
     "dataSource": "mysqlDs",
     "public": true

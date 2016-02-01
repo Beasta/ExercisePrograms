@@ -6,11 +6,17 @@ angular
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
       $urlRouterProvider) {
     $stateProvider
-      .state('todo', {
-        url: '',
-        templateUrl: 'views/todo.html',
-        controller: 'TodoController'
-      });
+      .state('program', {
+        url: '/program',
+        templateUrl: 'views/program.html',
+        controller: 'KineticControllerProgram'
+      })
+      .state('exercise', {
+        url: '/exercise',
+        templateUrl: 'views/exercise.html',
+        controller: 'KineticControllerExercise'
+      })   
+      ;
 
-    $urlRouterProvider.otherwise('todo');
+    $urlRouterProvider.otherwise('program');
   }]);

@@ -1,0 +1,52 @@
+<h1>Program list</h1>
+<hr>
+<form name="programForm" novalidate ng-submit="addProgram()">
+  <div class="form-group"
+      ng-class="{'has-error': programForm.name.$invalid
+        && programForm.name.$dirty}">
+    <input type="text" class="form-control focus" name="name"
+        placeholder="Program Name" autocomplete="off" required
+        ng-model="newProgram.name">
+    <input type="text" class="form-control focus" name="details"
+        placeholder="Program Details" autocomplete="off" required
+        ng-model="newProgram.details">
+    <span class="has-error control-label" ng-show="
+        programForm.name.$invalid && programForm.name.$dirty">
+      Name is required.
+    </span>
+  </div>
+  <button class="btn btn-default" ng-disabled="programForm.$invalid">Add</button>
+</form>
+<hr>
+<div class="list-group">
+  <a class="list-group-item" ng-repeat="program in programs">{{program.name}}&nbsp;
+    <i class="glyphicon glyphicon-remove pull-right"
+        ng-click="removeProgram(program)"></i></a>
+</div>
+<!--
+<h1>Exercise list</h1>
+<hr>
+<form name="exerciseForm" novalidate ng-submit="addExercise()">
+  <div class="form-group"
+      ng-class="{'has-error': exerciseForm.name.$invalid
+        && exerciseForm.name.$dirty}">
+    <input type="text" class="form-control focus" name="name"
+        placeholder="Exercise Name" autocomplete="off" required
+        ng-model="newExercise.name">
+    <input type="text" class="form-control focus" name="details"
+        placeholder="Exercise Details" autocomplete="off" required
+        ng-model="newExercise.details">
+    <span class="has-error control-label" ng-show="
+        exerciseForm.name.$invalid && exerciseForm.name.$dirty">
+      Name is required.
+    </span>
+  </div>
+  <button class="btn btn-default" ng-disabled="exerciseForm.$invalid">Add</button>
+</form>
+<hr>
+<div class="list-group">
+  <a class="list-group-item" ng-repeat="exercise in exercises">{{exercise.name}}&nbsp;
+    <i class="glyphicon glyphicon-remove pull-right"
+        ng-click="removeExercise(exercise)"></i></a>
+</div>
+-->
