@@ -1,15 +1,13 @@
-# loopback-example-angular
+# ExerciseProgram
 
 ```
-$ git clone https://github.com/strongloop/loopback-example-angular.git
-$ cd loopback-example-angular
+$ git clone https://github.com/Beasta/ExercisePrograms.git
+$ cd ExercisePrograms
 $ npm install
 $ node . # then browse to localhost:3000
 ```
 
-A simple todo list using AngularJS on the client-side and LoopBack on the
-server-side.
-
+An app for building exercise programs. Utilizes loopback and angular with data persisted to a mysql database. 
 ## Prerequisites
 
 ### Tutorials
