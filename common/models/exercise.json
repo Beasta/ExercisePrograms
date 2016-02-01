@@ -1,0 +1,27 @@
+{
+  "name": "Exercise",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "details": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "program": {
+      "type": "belongsTo",
+      "model": "Program",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

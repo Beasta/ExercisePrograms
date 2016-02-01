@@ -1,0 +1,27 @@
+{
+  "name": "Program",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "details": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "exercises": {
+      "type": "hasMany",
+      "model": "Exercise",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
